@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.4" pages="3">
   <diagram name="第 1 页" id="AOBy72zQ2KrilaSbscua">
     <mxGraphModel dx="983" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -42,6 +42,135 @@
         </mxCell>
         <mxCell id="vU542Klui83KiIq0t1He-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;Linux kernel&lt;/span&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="250" y="585" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Zg66je7wJOA3iLy8dWky" name="bootrom">
+    <mxGraphModel dx="1188" dy="654" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-12" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U6ARZ6nIprUjVuJDYrvO-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;0地址开始运行&lt;br&gt;EL3&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-13" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="U6ARZ6nIprUjVuJDYrvO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;初始化EL3异常向量入口&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-14" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U6ARZ6nIprUjVuJDYrvO-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;初始化SP、BSS&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-15" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="U6ARZ6nIprUjVuJDYrvO-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;初始化syscounter&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-16" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U6ARZ6nIprUjVuJDYrvO-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;初始化串口&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-17" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="U6ARZ6nIprUjVuJDYrvO-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;初始化启动时钟&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-18" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U6ARZ6nIprUjVuJDYrvO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;读取PIN状态确认启动模式&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-19" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U6ARZ6nIprUjVuJDYrvO-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;从外部存储读取SPL固件&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;（USB、UART、EMMC、NAND、 NOR）&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="120" x="360" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-20" edge="1" parent="1" source="U6ARZ6nIprUjVuJDYrvO-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U6ARZ6nIprUjVuJDYrvO-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;固件校验、解密&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="U6ARZ6nIprUjVuJDYrvO-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;跳转到SPL&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="NVtr6ipHlUhER1xBA5W0" name="SPL">
+    <mxGraphModel dx="983" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-3" edge="1" parent="1" source="KCInm6_-eZoc3MjYz5NO-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KCInm6_-eZoc3MjYz5NO-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;SPL入口地址&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;（SYSRAM）&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="59.97" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-6" edge="1" parent="1" source="KCInm6_-eZoc3MjYz5NO-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KCInm6_-eZoc3MjYz5NO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;CPU、串口、时钟初始化&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="159.97" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-7" edge="1" parent="1" source="KCInm6_-eZoc3MjYz5NO-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KCInm6_-eZoc3MjYz5NO-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;DDR初始化&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="259.97" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-9" edge="1" parent="1" source="KCInm6_-eZoc3MjYz5NO-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KCInm6_-eZoc3MjYz5NO-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;读取preboot.itb&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="359.97" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-11" edge="1" parent="1" source="KCInm6_-eZoc3MjYz5NO-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KCInm6_-eZoc3MjYz5NO-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;启动SCP (M3)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="459.97" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-14" edge="1" parent="1" source="KCInm6_-eZoc3MjYz5NO-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KCInm6_-eZoc3MjYz5NO-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-15" edge="1" parent="1" source="KCInm6_-eZoc3MjYz5NO-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="KCInm6_-eZoc3MjYz5NO-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-16" connectable="0" parent="KCInm6_-eZoc3MjYz5NO-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="烧录流程直接启动UBOOT" vertex="1">
+          <mxGeometry relative="1" x="-0.2327" y="-1" as="geometry">
+            <mxPoint x="35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;启动SCP (M3)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="386" y="59.97" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-18" edge="1" parent="1" source="KCInm6_-eZoc3MjYz5NO-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KCInm6_-eZoc3MjYz5NO-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;启动ATF&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="386" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;启动UBOOT&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="540" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="KCInm6_-eZoc3MjYz5NO-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;OPTEE、UBOOT&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="386" y="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

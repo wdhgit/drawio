@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" version="29.3.8">
+  <diagram name="第 1 页" id="xTVSAounD6DTYhMsdXMB">
+    <mxGraphModel dx="1665" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="13R-B0u_wIFotcgnrLy4-9" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="GET SPL bootpart from EMMC EXTCSD&amp;nbsp;" vertex="1">
+          <mxGeometry height="60" width="120" x="354" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-3" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="BOOTROM" vertex="1">
+          <mxGeometry height="40" width="120" x="354" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-8" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="BOOT1?" vertex="1">
+          <mxGeometry height="50" width="148" x="340" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-34" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Read SPL from boot1" vertex="1">
+          <mxGeometry height="40" width="120" x="170" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-35" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Read SPL from boot2" vertex="1">
+          <mxGeometry height="40" width="120" x="354" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-7" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.541;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" target="13R-B0u_wIFotcgnrLy4-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-10" connectable="0" parent="13R-B0u_wIFotcgnrLy4-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Y" vertex="1">
+          <mxGeometry relative="1" x="-0.3217" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-14" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Read uboot ENV From EMMC" vertex="1">
+          <mxGeometry height="50" width="120" x="354" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-20" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-26" connectable="0" parent="13R-B0u_wIFotcgnrLy4-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Y" vertex="1">
+          <mxGeometry relative="1" x="-0.3118" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-21" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-25" connectable="0" parent="13R-B0u_wIFotcgnrLy4-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.2194" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-12" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="env bootpart is A?" vertex="1">
+          <mxGeometry height="50" width="148" x="340" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-38" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Set bootpart=A" vertex="1">
+          <mxGeometry height="40" width="120" x="70" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-28" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-41" connectable="0" parent="13R-B0u_wIFotcgnrLy4-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Y" vertex="1">
+          <mxGeometry relative="1" x="-0.022" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-40" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230.33333333333348" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-18" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="EMMC EXTCSD&amp;nbsp; is&amp;nbsp;boot1&lt;br&gt;&amp;amp;&amp;amp;&amp;nbsp;bootpart_spl_ab == 1&amp;nbsp;" vertex="1">
+          <mxGeometry height="85" width="148" x="156" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-27" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-19" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="EMMC EXTCSD&amp;nbsp; is&amp;nbsp;boot2&lt;br&gt;&amp;amp;&amp;amp;&amp;nbsp;bootpart_spl_ab == 1&amp;nbsp;" vertex="1">
+          <mxGeometry height="85" width="148" x="340" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Set bootpart=B" vertex="1">
+          <mxGeometry height="40" width="120" x="474" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="boot from part A" vertex="1">
+          <mxGeometry height="40" width="120" x="170" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-37" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="use ddr_a" vertex="1">
+          <mxGeometry height="40" width="120" x="170" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-36" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="13R-B0u_wIFotcgnrLy4-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="use ddr_b" vertex="1">
+          <mxGeometry height="40" width="120" x="354" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="13R-B0u_wIFotcgnrLy4-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="boot from part B" vertex="1">
+          <mxGeometry height="40" width="120" x="354" y="800" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

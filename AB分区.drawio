@@ -24,7 +24,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="13R-B0u_wIFotcgnrLy4-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="SPL bootpart is boot1?" vertex="1">
+        <mxCell id="13R-B0u_wIFotcgnrLy4-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="EXTCSD 中 bootpart&lt;div&gt;is boot1?&lt;/div&gt;" vertex="1">
           <mxGeometry height="50" width="148" x="340" y="250" as="geometry" />
         </mxCell>
         <mxCell id="13R-B0u_wIFotcgnrLy4-34" edge="1" parent="1" source="13R-B0u_wIFotcgnrLy4-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="13R-B0u_wIFotcgnrLy4-31">

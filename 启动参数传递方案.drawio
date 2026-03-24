@@ -1,11 +1,47 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.4">
   <diagram name="第 1 页" id="--8hyyKYUYAdf6TCsC1C">
-    <mxGraphModel dx="1089" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="908" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Sg3FdDSXGe0amwqtaZxd-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="1. 当前env 分成两份 分别是env.txt 和 env_var.txt, 其中env.txt是跟着板子的烧录到env分区，OTA升级时不更新env.txt。&lt;br&gt;&lt;br&gt;&lt;div&gt;2. env_var.txt是跟着u-boot.bin走的，编译到uboot的数据段中。&lt;br&gt;&lt;br&gt;3. 做uboot启动过程中执行&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;env_var.txt，这样env_var.txt可以随时改动。&lt;br&gt;&lt;br&gt;问题：&lt;br&gt;1. env_var.txt怎么编译到uboot代码段中？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;方案：&lt;br&gt;1. 写一个脚本把env_var.txt 转成宏可以在im.mk中可以识别的，比如 UBOOT_ENV_VAR。&lt;br&gt;2. 做编译uboot的时候把这个宏通过makefile -D的方式传递给uboot。&lt;br&gt;3.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="260" width="490" x="80" y="70" as="geometry" />
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;spacingTop=0;spacing=2;spacingLeft=2;" value="背景：从客户那边了解到客户的ENV不是随着OTA升级的，因为后续假如我们更新了ENV就会跟板子上的旧的兼容性问题。因此为了解决这个问题，我们打算把当前的ENV拆分两份，一份是跟着uboot走的编译到uboot的data段，另一部分是跟着env.img走的。&lt;br&gt;&lt;br&gt;1. 当前env 分成两份 分别是env.txt 和 env_buildin.txt, 其中env.txt是跟着板子的烧录到env分区，OTA升级时不更新env.txt。&lt;br&gt;&lt;br&gt;&lt;div&gt;2. env_var.txt是跟着u-boot.bin走的，编译到uboot的数据段中。&lt;br&gt;&lt;br&gt;3. 做uboot启动过程中执行env_buildin&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;.txt，这样&lt;/span&gt;env_buildin&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;.txt可以随时改动。&lt;br&gt;&lt;br&gt;问题：&lt;br&gt;1.&amp;nbsp;&lt;/span&gt;env_buildin&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;.txt怎么编译到uboot代码段中？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;方案：&lt;br&gt;1. 写一个脚本把&lt;/span&gt;env_buildin&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;.txt 转成宏可以在im.mk中可以识别的，比如 UBOOT_ENV_VAR。&lt;br&gt;2. 做编译uboot的时候把这个宏通过makefile -D的方式传递给uboot。&lt;br&gt;3. 做uboot中判断这个宏是否为空，并在启动的过程中执行传进去的ENV。&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="600" x="80" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-8" edge="1" parent="1" source="Sg3FdDSXGe0amwqtaZxd-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Sg3FdDSXGe0amwqtaZxd-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-9" edge="1" parent="1" source="Sg3FdDSXGe0amwqtaZxd-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Sg3FdDSXGe0amwqtaZxd-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="env.txt" vertex="1">
+          <mxGeometry height="60" width="70" x="60" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-11" edge="1" parent="1" source="Sg3FdDSXGe0amwqtaZxd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Sg3FdDSXGe0amwqtaZxd-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="env.txt" vertex="1">
+          <mxGeometry height="60" width="90" x="170" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-10" edge="1" parent="1" source="Sg3FdDSXGe0amwqtaZxd-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Sg3FdDSXGe0amwqtaZxd-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: left;&quot;&gt;env_buildin&lt;/span&gt;.txt" vertex="1">
+          <mxGeometry height="60" width="90" x="170" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-12" edge="1" parent="1" source="Sg3FdDSXGe0amwqtaZxd-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Sg3FdDSXGe0amwqtaZxd-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="env.img" vertex="1">
+          <mxGeometry height="60" width="90" x="335" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-13" edge="1" parent="1" source="Sg3FdDSXGe0amwqtaZxd-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Sg3FdDSXGe0amwqtaZxd-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="uboot.bin" vertex="1">
+          <mxGeometry height="60" width="90" x="335" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="Sg3FdDSXGe0amwqtaZxd-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="uboot run bootcmd" vertex="1">
+          <mxGeometry height="60" width="90" x="510" y="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

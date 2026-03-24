@@ -14,7 +14,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Sg3FdDSXGe0amwqtaZxd-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="env.txt" vertex="1">
-          <mxGeometry height="60" width="70" x="60" y="380" as="geometry" />
+          <mxGeometry height="60" width="70" x="60" y="390" as="geometry" />
         </mxCell>
         <mxCell id="Sg3FdDSXGe0amwqtaZxd-11" edge="1" parent="1" source="Sg3FdDSXGe0amwqtaZxd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Sg3FdDSXGe0amwqtaZxd-5">
           <mxGeometry relative="1" as="geometry" />
@@ -41,7 +41,7 @@
           <mxGeometry height="60" width="90" x="335" y="450" as="geometry" />
         </mxCell>
         <mxCell id="Sg3FdDSXGe0amwqtaZxd-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="uboot run bootcmd" vertex="1">
-          <mxGeometry height="60" width="90" x="510" y="390" as="geometry" />
+          <mxGeometry height="60" width="90" x="480" y="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

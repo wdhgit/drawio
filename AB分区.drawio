@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" version="29.6.6" pages="2">
   <diagram name="第 1 页" id="xTVSAounD6DTYhMsdXMB">
-    <mxGraphModel dx="1588" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1089" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -221,6 +221,15 @@
         </mxCell>
         <mxCell id="7tCpToFPBayEVIE3S7uR-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=14;" value="正常启动流程，如果SPL的启动分区跟bootpart不匹配，会修改ENV" vertex="1">
           <mxGeometry height="60" width="210" x="90" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="LJhQrR29UR6zq2QTtMv3-1" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};dashed=1;" value="IAC4 的DDR分区名是ddr和reserve0" vertex="1">
+          <mxGeometry height="30" width="240" x="33" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="LJhQrR29UR6zq2QTtMv3-2" edge="1" parent="1" source="LJhQrR29UR6zq2QTtMv3-1" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.15;exitY=-0.055;exitDx=0;exitDy=0;exitPerimeter=0;" target="13R-B0u_wIFotcgnrLy4-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="620" as="sourcePoint" />
+            <mxPoint x="422" y="673" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

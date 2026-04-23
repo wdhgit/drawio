@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" version="29.6.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" version="29.6.6" pages="2">
   <diagram name="第 1 页" id="xTVSAounD6DTYhMsdXMB">
     <mxGraphModel dx="1588" dy="818" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -221,6 +221,41 @@
         </mxCell>
         <mxCell id="7tCpToFPBayEVIE3S7uR-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=14;" value="正常启动流程，如果SPL的启动分区跟bootpart不匹配，会修改ENV" vertex="1">
           <mxGeometry height="60" width="210" x="90" y="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2LUvD8TuNI1wO6nzGeUS" name="第 2 页">
+    <mxGraphModel dx="1314" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7QUClN3I_j9PUGe74fir-7" edge="1" parent="1" source="7QUClN3I_j9PUGe74fir-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7QUClN3I_j9PUGe74fir-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QUClN3I_j9PUGe74fir-1" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" value="preboot.itb校验失败" vertex="1">
+          <mxGeometry height="80" width="210" x="270" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="7QUClN3I_j9PUGe74fir-8" edge="1" parent="1" source="7QUClN3I_j9PUGe74fir-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7QUClN3I_j9PUGe74fir-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QUClN3I_j9PUGe74fir-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" value="修改ENV中bootpart &lt;br&gt;A改成B或者B改成A" vertex="1">
+          <mxGeometry height="70" width="207.5" x="271.25" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="7QUClN3I_j9PUGe74fir-9" edge="1" parent="1" source="7QUClN3I_j9PUGe74fir-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7QUClN3I_j9PUGe74fir-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QUClN3I_j9PUGe74fir-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" value="bootpart_spl_ab = 1？" vertex="1">
+          <mxGeometry height="80" width="210" x="270" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="7QUClN3I_j9PUGe74fir-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=22;" value="RESET" vertex="1">
+          <mxGeometry height="80" width="120" x="315" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="7QUClN3I_j9PUGe74fir-10" edge="1" parent="1" source="7QUClN3I_j9PUGe74fir-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="7QUClN3I_j9PUGe74fir-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="7QUClN3I_j9PUGe74fir-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" value="修改EMMC 的extcsd，切换bootrom使用的spl分区" vertex="1">
+          <mxGeometry height="80" width="207.5" x="271.25" y="570" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

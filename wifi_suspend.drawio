@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="ImQaXRlsFguB4ReTO9KS">
+    <mxGraphModel dx="902" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="C1tFleYjg3W5zCN1BD72-1" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="270" y="140" as="sourcePoint" />
+            <mxPoint x="270" y="891.4285714285713" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-20" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="C1tFleYjg3W5zCN1BD72-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="系统启动&lt;br&gt;ifconfig up" vertex="1">
+          <mxGeometry height="36" width="120" x="300" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-23" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="C1tFleYjg3W5zCN1BD72-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ifconfig down&lt;div&gt;wifi/pcie suspend&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="300" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-33" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="C1tFleYjg3W5zCN1BD72-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="wifi resume&lt;br&gt;ifconfig up" vertex="1">
+          <mxGeometry height="40" width="120" x="300" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="250" as="sourcePoint" />
+            <mxPoint x="500" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-36" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="C1tFleYjg3W5zCN1BD72-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ifconfig down&lt;br&gt;wifi/pcie suspend" vertex="1">
+          <mxGeometry height="40" width="120" x="300" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-10" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="C1tFleYjg3W5zCN1BD72-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-11" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="500" as="sourcePoint" />
+            <mxPoint x="500" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-37" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="C1tFleYjg3W5zCN1BD72-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="只调用了wifi/pcie 的resume" vertex="1">
+          <mxGeometry height="45" width="120" x="300" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="系统UI休眠" vertex="1">
+          <mxGeometry height="30" width="70" x="482.5" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="系统原生resume" vertex="1">
+          <mxGeometry height="30" width="110" x="440" y="527.5" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="只调用了wifi/pcie 的suspend" vertex="1">
+          <mxGeometry height="45" width="120" x="300" y="592.5" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;系统原生suspend&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;此时测试出WiFi功耗偏高&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="145" x="427.5" y="577.5" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="5min" vertex="1">
+          <mxGeometry height="30" width="60" x="495" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-39" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="269" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="系统UI休眠" vertex="1">
+          <mxGeometry height="26" width="90" x="440" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-26" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="343" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="系统UI唤醒" vertex="1">
+          <mxGeometry height="26" width="90" x="440" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-40" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="413.1111111111111" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C1tFleYjg3W5zCN1BD72-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="系统UI休眠" vertex="1">
+          <mxGeometry height="26" width="90" x="440" y="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

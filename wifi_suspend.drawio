@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="ImQaXRlsFguB4ReTO9KS">
-    <mxGraphModel dx="526" dy="273" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="758" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -37,7 +37,7 @@
         <mxCell id="C1tFleYjg3W5zCN1BD72-36" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="C1tFleYjg3W5zCN1BD72-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="C1tFleYjg3W5zCN1BD72-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ifconfig down&lt;br&gt;wifi/pcie suspend" vertex="1">
+        <mxCell id="C1tFleYjg3W5zCN1BD72-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;ifconfig down&lt;/font&gt;&lt;br&gt;wifi/pcie suspend" vertex="1">
           <mxGeometry height="40" width="120" x="300" y="430" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-10" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="C1tFleYjg3W5zCN1BD72-9">
@@ -59,13 +59,13 @@
           <mxGeometry height="30" width="70" x="460" y="180" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="系统原生resume" vertex="1">
-          <mxGeometry height="30" width="110" x="440" y="520" as="geometry" />
+          <mxGeometry height="30" width="110" x="430" y="520" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="只调用了wifi/pcie 的suspend" vertex="1">
           <mxGeometry height="45" width="120" x="300" y="610" as="geometry" />
         </mxCell>
-        <mxCell id="C1tFleYjg3W5zCN1BD72-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;系统原生suspend&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;此时测试出WiFi功耗偏高&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="145" x="440" y="595" as="geometry" />
+        <mxCell id="C1tFleYjg3W5zCN1BD72-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;系统原生suspend&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;此时测试出WiFi功耗偏高&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="145" x="440" y="602.5" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="5min" vertex="1">
           <mxGeometry height="30" width="60" x="490" y="480" as="geometry" />
@@ -114,8 +114,11 @@
             <mxPoint x="440" y="500" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="N1FkIVkvK4R3nEjsa3D1-4" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=default;" value="这儿SOC会强制拉参考时钟" vertex="1">
+        <mxCell id="N1FkIVkvK4R3nEjsa3D1-4" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;strokeColor=default;" value="这儿SOC会强制拉参考时钟" vertex="1">
           <mxGeometry height="30" width="110" x="465" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="N1FkIVkvK4R3nEjsa3D1-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=8;" value="REG_ON: 拉低后EP内部固件会丢失，ASPM失效&lt;div&gt;参考时钟：理论上应该由EP 控制&lt;/div&gt;&lt;div&gt;ASPM：使能后硬件自动协商，ifconfig/up/down时功耗应该差不多。&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="160" x="600" y="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

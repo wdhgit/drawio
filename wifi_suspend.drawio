@@ -118,7 +118,7 @@
           <mxGeometry height="30" width="110" x="465" y="450" as="geometry" />
         </mxCell>
         <mxCell id="N1FkIVkvK4R3nEjsa3D1-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=8;" value="REG_ON: 拉低后EP内部固件会丢失，ASPM失效&lt;div&gt;参考时钟：理论上应该由EP 控制&lt;/div&gt;&lt;div&gt;ASPM：使能后硬件自动协商，ifconfig/up/down时功耗应该差不多。&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="160" x="600" y="400" as="geometry" />
+          <mxGeometry height="50" width="250" x="540" y="388" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

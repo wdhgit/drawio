@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="ImQaXRlsFguB4ReTO9KS">
-    <mxGraphModel dx="902" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="526" dy="273" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,19 +56,19 @@
           <mxGeometry height="45" width="120" x="300" y="520" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="系统UI休眠" vertex="1">
-          <mxGeometry height="30" width="70" x="482.5" y="120" as="geometry" />
+          <mxGeometry height="30" width="70" x="460" y="180" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="系统原生resume" vertex="1">
-          <mxGeometry height="30" width="110" x="440" y="527.5" as="geometry" />
+          <mxGeometry height="30" width="110" x="440" y="520" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="只调用了wifi/pcie 的suspend" vertex="1">
-          <mxGeometry height="45" width="120" x="300" y="592.5" as="geometry" />
+          <mxGeometry height="45" width="120" x="300" y="610" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;系统原生suspend&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;此时测试出WiFi功耗偏高&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="145" x="427.5" y="577.5" as="geometry" />
+          <mxGeometry height="60" width="145" x="440" y="595" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="5min" vertex="1">
-          <mxGeometry height="30" width="60" x="495" y="480" as="geometry" />
+          <mxGeometry height="30" width="60" x="490" y="480" as="geometry" />
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-39" edge="1" parent="1" source="C1tFleYjg3W5zCN1BD72-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
           <mxGeometry relative="1" as="geometry">
@@ -93,6 +93,29 @@
         </mxCell>
         <mxCell id="C1tFleYjg3W5zCN1BD72-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="系统UI休眠" vertex="1">
           <mxGeometry height="26" width="90" x="440" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="N1FkIVkvK4R3nEjsa3D1-1" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="430" y="580" as="sourcePoint" />
+            <mxPoint x="380" y="588.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1FkIVkvK4R3nEjsa3D1-2" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="670" as="sourcePoint" />
+            <mxPoint x="390" y="675" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1FkIVkvK4R3nEjsa3D1-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="确认模组是否进入D3状态。&lt;br&gt;重新配置ASPM" vertex="1">
+          <mxGeometry height="30" width="165" x="440" y="565" as="geometry" />
+        </mxCell>
+        <mxCell id="N1FkIVkvK4R3nEjsa3D1-5" edge="1" parent="1" source="N1FkIVkvK4R3nEjsa3D1-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N1FkIVkvK4R3nEjsa3D1-4" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=default;" value="这儿SOC会强制拉参考时钟" vertex="1">
+          <mxGeometry height="30" width="110" x="465" y="450" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

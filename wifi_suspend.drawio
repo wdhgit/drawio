@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" pages="2">
   <diagram name="第 1 页" id="ImQaXRlsFguB4ReTO9KS">
     <mxGraphModel dx="758" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -119,6 +119,98 @@
         </mxCell>
         <mxCell id="N1FkIVkvK4R3nEjsa3D1-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=8;" value="REG_ON: 拉低后EP内部固件会丢失，ASPM失效&lt;div&gt;参考时钟：理论上应该由EP 控制&lt;/div&gt;&lt;div&gt;ASPM：使能后硬件自动协商，ifconfig/up/down时功耗应该差不多。&lt;/div&gt;" vertex="1">
           <mxGeometry height="50" width="250" x="540" y="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="oe3NyWG063AdWansJPuH" name="第 2 页">
+    <mxGraphModel dx="631" dy="327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RpyHPoBCGFPIQCSvretR-1" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="380" y="410" as="sourcePoint" />
+            <mxPoint x="380" y="1161.4285714285713" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-2" edge="1" parent="1" source="RpyHPoBCGFPIQCSvretR-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="RpyHPoBCGFPIQCSvretR-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="系统启动&lt;br&gt;ifconfig up" vertex="1">
+          <mxGeometry height="36" width="120" x="410" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-8" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="635" as="sourcePoint" />
+            <mxPoint x="610" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-9" edge="1" parent="1" source="RpyHPoBCGFPIQCSvretR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="RpyHPoBCGFPIQCSvretR-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;ifconfig down&lt;/font&gt;&lt;br&gt;wifi/pcie suspend" vertex="1">
+          <mxGeometry height="40" width="120" x="410" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-11" edge="1" parent="1" source="RpyHPoBCGFPIQCSvretR-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="RpyHPoBCGFPIQCSvretR-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-12" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="350" y="750" as="sourcePoint" />
+            <mxPoint x="610" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-13" edge="1" parent="1" source="RpyHPoBCGFPIQCSvretR-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="RpyHPoBCGFPIQCSvretR-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="只调用了wifi/pcie 的resume" vertex="1">
+          <mxGeometry height="45" width="120" x="410" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="系统原生resume" vertex="1">
+          <mxGeometry height="30" width="110" x="540" y="797.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="只调用了wifi/pcie 的suspend" vertex="1">
+          <mxGeometry height="45" width="120" x="410" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;系统原生suspend&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;此时测试出WiFi功耗偏高&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="145" x="550" y="872.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="5min" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-20" edge="1" parent="1" source="RpyHPoBCGFPIQCSvretR-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="480" y="654" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="系统UI休眠" vertex="1">
+          <mxGeometry height="26" width="90" x="550" y="641" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-26" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="540" y="850" as="sourcePoint" />
+            <mxPoint x="490" y="858.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="确认模组是否进入D3状态。&lt;br&gt;重新配置ASPM" vertex="1">
+          <mxGeometry height="30" width="165" x="550" y="835" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-29" edge="1" parent="1" source="RpyHPoBCGFPIQCSvretR-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-30" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;rounded=0;strokeColor=default;" value="这儿SOC会强制拉参考时钟" vertex="1">
+          <mxGeometry height="30" width="110" x="605" y="767.5" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=8;" value="REG_ON: 拉低后EP内部固件会丢失，ASPM失效&lt;div&gt;参考时钟：理论上应该由EP 控制&lt;/div&gt;&lt;div&gt;ASPM：使能后硬件自动协商，ifconfig/up/down时功耗应该差不多。&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="250" x="620" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="RpyHPoBCGFPIQCSvretR-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=#FF3333;" value="功耗正常" vertex="1">
+          <mxGeometry height="30" width="60" x="400" y="842.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

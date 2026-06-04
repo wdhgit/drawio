@@ -37,8 +37,8 @@
         <mxCell id="-nVsYNixdG5_AAYtpqJo-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="ramdisk当前已经存在，打包到了boot.itb中。把ramdisk当做一个&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;&lt;b&gt;recovery 文件系统&lt;/b&gt;&lt;/font&gt;，在ramdisk中实现读卡和烧录功能" vertex="1">
           <mxGeometry height="80" width="180" x="610" y="410" as="geometry" />
         </mxCell>
-        <mxCell id="-nVsYNixdG5_AAYtpqJo-13" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=default;" value="文件系统，只有单个分区" vertex="1">
-          <mxGeometry height="40" width="80" x="180" y="420" as="geometry" />
+        <mxCell id="-nVsYNixdG5_AAYtpqJo-13" parent="1" style="text;html=1;whiteSpace=wrap;align=center;verticalAlign=middle;rounded=0;strokeColor=default;" value="文件系统，只有单个分区,没有AB区分" vertex="1">
+          <mxGeometry height="50" width="80" x="180" y="420" as="geometry" />
         </mxCell>
         <mxCell id="-nVsYNixdG5_AAYtpqJo-14" edge="1" parent="1" source="-nVsYNixdG5_AAYtpqJo-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" target="-nVsYNixdG5_AAYtpqJo-8">
           <mxGeometry relative="1" as="geometry" />

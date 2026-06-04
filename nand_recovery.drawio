@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="app.diagrams.net" pages="2">
   <diagram name="第 1 页" id="C846Kk9cPOJDyKqLHOR_">
-    <mxGraphModel dx="1082" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="902" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -42,6 +42,38 @@
         </mxCell>
         <mxCell id="-nVsYNixdG5_AAYtpqJo-14" edge="1" parent="1" source="-nVsYNixdG5_AAYtpqJo-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" target="-nVsYNixdG5_AAYtpqJo-8">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="9HiU79ghVOs389KnykhQ" name="第 2 页">
+    <mxGraphModel dx="902" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="81QqczJBe2GHveifnF1M-6" edge="1" parent="1" source="81QqczJBe2GHveifnF1M-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="81QqczJBe2GHveifnF1M-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="81QqczJBe2GHveifnF1M-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="生成rootfs" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="81QqczJBe2GHveifnF1M-7" edge="1" parent="1" source="81QqczJBe2GHveifnF1M-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="81QqczJBe2GHveifnF1M-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="81QqczJBe2GHveifnF1M-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="生成system" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="81QqczJBe2GHveifnF1M-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="生成 recovery" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="81QqczJBe2GHveifnF1M-5" edge="1" parent="1" source="81QqczJBe2GHveifnF1M-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="81QqczJBe2GHveifnF1M-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="81QqczJBe2GHveifnF1M-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Make all" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="81QqczJBe2GHveifnF1M-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="工作拆解：&lt;br&gt;1. 生成recovery 文件。&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;recovery 的编译目标放到rootfs/im.mk。&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;recovery 依赖一些拷贝删除动作，依赖项放到 board/Makefile。&lt;/div&gt;&lt;div&gt;2. 划分recovery分区，并且修改烧录脚本。&lt;br&gt;3. init程序能够识别recovery标志，然后只挂载recovery。&lt;br&gt;4. 提供在recovery中更新所有分区的脚本。&lt;/div&gt;" vertex="1">
+          <mxGeometry height="185" width="370" x="440" y="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

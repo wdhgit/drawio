@@ -50,8 +50,8 @@
         <mxCell id="NB0EyB8uGB_RDp4CUSld-9" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
           <mxGeometry height="55" width="100" x="155" y="517" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: left;&quot;&gt;启动模式 101： [ufs低速启动] &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left; background-color: transparent;&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left; background-color: transparent;&quot;&gt;[usb]&lt;/span&gt;" vertex="1">
-          <mxGeometry height="40" width="230" x="100" y="250" as="geometry" />
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="&lt;span style=&quot;text-align: left;&quot;&gt;启动模式 101： [ufs低速启动] &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left; background-color: transparent;&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left; background-color: transparent;&quot;&gt;[usb]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="230" x="110" y="240" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-36" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-12">
           <mxGeometry relative="1" as="geometry" />
@@ -240,8 +240,8 @@
         <mxCell id="Snxa9bD47oOBx4wNCC72-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN高速 （efuse）" vertex="1">
           <mxGeometry height="40" width="90" x="190" y="174" as="geometry" />
         </mxCell>
-        <mxCell id="Snxa9bD47oOBx4wNCC72-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="启动模式 110： &lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;[ufs高速启动]&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;[usb]&lt;/span&gt;" vertex="1">
-          <mxGeometry height="40" width="450" x="185" y="30" as="geometry" />
+        <mxCell id="Snxa9bD47oOBx4wNCC72-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#f5f5f5;gradientColor=#b3b3b3;strokeColor=#666666;" value="启动模式 110： &lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;[ufs高速启动]&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;[usb]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="275" x="185" y="30" as="geometry" />
         </mxCell>
         <mxCell id="Snxa9bD47oOBx4wNCC72-14" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-17">
           <mxGeometry relative="1" as="geometry" />

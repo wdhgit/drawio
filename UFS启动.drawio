@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" pages="2">
+<mxfile host="app.diagrams.net" pages="3">
   <diagram name="第 1 页" id="G7MmgVwn_JN6exUAJ0xq">
-    <mxGraphModel dx="1306" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1082" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="rA-qTAb89klGYPX6EJBB-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;启动模式&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;000： [emmc] → [usb] → [uart]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- 启动模式 001： [usb] → [emmc] → [spi-nand] → [spi-nor]&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs低速切高速]&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs&lt;/span&gt;低&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;速]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs高速]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- 启动模式 010： [spi-nor] → [usb] → [uart]&lt;/div&gt;&lt;div&gt;- 启动模式 011： [spi-nand] → [usb] → [uart]&lt;/div&gt;&lt;div&gt;- 启动模式 100： [uart] → [spi-nor] → [spi-nand] → [emmc]&lt;/div&gt;&lt;div&gt;- 启动模式 101： [ufs低速启动] &lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[usb]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- 启动模式 110：&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[ufs高速启动]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[usb]&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="120" width="620" x="90" y="50" as="geometry" />
+          <mxGeometry height="120" width="620" x="90" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="新增Efuse：&lt;div&gt;1. 低速是否需要切高速.(默认切高速， 设置后不切)&lt;/div&gt;&lt;div&gt;2. 是否控制efuse pin （默认不控制，设置后控制）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="290" x="420" y="180" as="geometry" />
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontColor=#0000FF;fontSize=14;" value="新增Efuse：&lt;div&gt;1. 低速是否需要关闭切高速.(默认切高速， 设置后不切)&lt;/div&gt;&lt;div&gt;2. 是否控制efuse pin （默认不控制，设置后控制）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="374" x="380" y="200" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-23" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-7">
           <mxGeometry relative="1" as="geometry" />
@@ -19,7 +19,7 @@
         <mxCell id="NB0EyB8uGB_RDp4CUSld-25" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="配置低速建链" vertex="1">
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="配置低速建链" vertex="1">
           <mxGeometry height="40" width="90" x="160" y="450" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-24" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-6">
@@ -27,13 +27,13 @@
             <mxPoint x="205" y="444" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN" vertex="1">
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN 低速 （efuse）" vertex="1">
           <mxGeometry height="40" width="90" x="160" y="384" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-27" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="发命令切高速 HS-G1" vertex="1">
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="发命令切高速 HS-G1 （efuse）" vertex="1">
           <mxGeometry height="40" width="90" x="160" y="600" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-26" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="NB0EyB8uGB_RDp4CUSld-8">
@@ -50,8 +50,8 @@
         <mxCell id="NB0EyB8uGB_RDp4CUSld-9" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
           <mxGeometry height="55" width="100" x="155" y="517" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: left;&quot;&gt;启动模式 101&lt;/span&gt;" vertex="1">
-          <mxGeometry height="40" width="90" x="110" y="250" as="geometry" />
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: left;&quot;&gt;启动模式 101： [ufs低速启动] &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left; background-color: transparent;&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-align: left; background-color: transparent;&quot;&gt;[usb]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="230" x="100" y="250" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-36" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-12">
           <mxGeometry relative="1" as="geometry" />
@@ -62,13 +62,13 @@
         <mxCell id="NB0EyB8uGB_RDp4CUSld-37" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN" vertex="1">
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN 高速 （efuse）" vertex="1">
           <mxGeometry height="40" width="90" x="310" y="384" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-38" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="配置高速建链" vertex="1">
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="配置高速建链" vertex="1">
           <mxGeometry height="40" width="90" x="310" y="450" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-28" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-18">
@@ -82,8 +82,8 @@
         <mxCell id="KlgkcFlpm4Ags5-VuJH5-2" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-17" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
-          <mxGeometry height="55" width="100" x="155" y="670" as="geometry" />
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-17" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="切速率成功？" vertex="1">
+          <mxGeometry height="55" width="100" x="155" y="660" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-29" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-20">
           <mxGeometry relative="1" as="geometry" />
@@ -92,6 +92,9 @@
           <mxGeometry height="40" width="90" x="160" y="750" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-30" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Vg5q-0XLda4XJRTYY7xd-2" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Vg5q-0XLda4XJRTYY7xd-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-20" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="数据校验OK ？" vertex="1">
@@ -109,18 +112,22 @@
         <mxCell id="KlgkcFlpm4Ags5-VuJH5-12" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="KlgkcFlpm4Ags5-VuJH5-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="切分区" vertex="1">
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" value="切分区" vertex="1">
           <mxGeometry height="40" width="90" x="160" y="910" as="geometry" />
         </mxCell>
-        <mxCell id="KlgkcFlpm4Ags5-VuJH5-3" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-18">
+        <mxCell id="KlgkcFlpm4Ags5-VuJH5-8" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-42">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="KlgkcFlpm4Ags5-VuJH5-17" connectable="0" parent="KlgkcFlpm4Ags5-VuJH5-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
-          <mxGeometry relative="1" x="-0.5934" y="-1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="Vg5q-0XLda4XJRTYY7xd-7" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="300" y="544" />
+              <mxPoint x="300" y="770" />
+            </Array>
+            <mxPoint x="250" y="770" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="KlgkcFlpm4Ags5-VuJH5-8" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-42">
+        <mxCell id="Vg5q-0XLda4XJRTYY7xd-8" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Vg5q-0XLda4XJRTYY7xd-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-31" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
@@ -135,13 +142,13 @@
         <mxCell id="KlgkcFlpm4Ags5-VuJH5-6" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN" vertex="1">
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN 低速 （efuse）" vertex="1">
           <mxGeometry height="40" width="90" x="460" y="384" as="geometry" />
         </mxCell>
         <mxCell id="KlgkcFlpm4Ags5-VuJH5-7" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-45">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NB0EyB8uGB_RDp4CUSld-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="配置低速建链" vertex="1">
+        <mxCell id="NB0EyB8uGB_RDp4CUSld-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="配置低速建链" vertex="1">
           <mxGeometry height="40" width="90" x="460" y="450" as="geometry" />
         </mxCell>
         <mxCell id="KlgkcFlpm4Ags5-VuJH5-4" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
@@ -166,7 +173,7 @@
         <mxCell id="NB0EyB8uGB_RDp4CUSld-45" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
           <mxGeometry height="55" width="100" x="455" y="517" as="geometry" />
         </mxCell>
-        <mxCell id="KlgkcFlpm4Ags5-VuJH5-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="USB启动" vertex="1">
+        <mxCell id="KlgkcFlpm4Ags5-VuJH5-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="USB启动" vertex="1">
           <mxGeometry height="40" width="90" x="620" y="320" as="geometry" />
         </mxCell>
         <mxCell id="KlgkcFlpm4Ags5-VuJH5-13" edge="1" parent="1" source="KlgkcFlpm4Ags5-VuJH5-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KlgkcFlpm4Ags5-VuJH5-9">
@@ -180,6 +187,224 @@
         <mxCell id="KlgkcFlpm4Ags5-VuJH5-11" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="两个分区都失败？" vertex="1">
           <mxGeometry height="55" width="100" x="155" y="977" as="geometry" />
         </mxCell>
+        <mxCell id="Vg5q-0XLda4XJRTYY7xd-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="启动成功" vertex="1">
+          <mxGeometry height="40" width="90" x="305" y="827.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Vg5q-0XLda4XJRTYY7xd-10" edge="1" parent="1" source="Vg5q-0XLda4XJRTYY7xd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="KlgkcFlpm4Ags5-VuJH5-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="355" y="690" />
+              <mxPoint x="600" y="690" />
+              <mxPoint x="600" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vg5q-0XLda4XJRTYY7xd-11" connectable="0" parent="Vg5q-0XLda4XJRTYY7xd-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.9713" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Vg5q-0XLda4XJRTYY7xd-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" value="关闭指令切高速&lt;div&gt;efuse 是1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="100" x="305" y="592.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Vg5q-0XLda4XJRTYY7xd-9" edge="1" parent="1" source="Vg5q-0XLda4XJRTYY7xd-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ql6nhWf0VNW54Wtxsakh" name="第 3 页">
+    <mxGraphModel dx="1306" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Snxa9bD47oOBx4wNCC72-1" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="复位" vertex="1">
+          <mxGeometry height="40" width="90" x="190" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-3" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="307" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" value="配置高速建链" vertex="1">
+          <mxGeometry height="40" width="90" x="190" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-5" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN高速 （efuse）" vertex="1">
+          <mxGeometry height="40" width="90" x="190" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="启动模式 110： &lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;[ufs高速启动]&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;[usb]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="320" x="140" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-14" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="复位" vertex="1">
+          <mxGeometry height="40" width="90" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-16" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN 低速 (efuse)" vertex="1">
+          <mxGeometry height="40" width="90" x="340" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-18" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="配置低速建链" vertex="1">
+          <mxGeometry height="40" width="90" x="340" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-20" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-21" connectable="0" parent="Snxa9bD47oOBx4wNCC72-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.3338" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-22" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-23" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
+          <mxGeometry height="55" width="100" x="185" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-24" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="读数据" vertex="1">
+          <mxGeometry height="40" width="90" x="190" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-26" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj_6jyX3p3bSbpmFPhCt-1" connectable="0" parent="Snxa9bD47oOBx4wNCC72-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="否" vertex="1">
+          <mxGeometry relative="1" x="-0.4236" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj_6jyX3p3bSbpmFPhCt-3" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Qj_6jyX3p3bSbpmFPhCt-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-27" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="数据校验OK ？" vertex="1">
+          <mxGeometry height="55" width="100" x="185" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-28" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="235" y="850" />
+              <mxPoint x="140" y="850" />
+              <mxPoint x="140" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-29" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;" value="切分区" vertex="1">
+          <mxGeometry height="40" width="90" x="190" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-31" edge="1" parent="1" source="kbyZZD2k67tRUDCe1sfv-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="kbyZZD2k67tRUDCe1sfv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-33" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-34" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
+          <mxGeometry height="55" width="100" x="335" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-35" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="复位" vertex="1">
+          <mxGeometry height="40" width="90" x="490" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-37" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN 低速 (efuse)" vertex="1">
+          <mxGeometry height="40" width="90" x="490" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-39" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" value="配置低速建链" vertex="1">
+          <mxGeometry height="40" width="90" x="490" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-41" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="535" y="560" />
+              <mxPoint x="280" y="560" />
+            </Array>
+            <mxPoint x="280" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-42" connectable="0" parent="Snxa9bD47oOBx4wNCC72-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.7697" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-43" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="630" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-44" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
+          <mxGeometry height="55" width="100" x="485" y="307" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="USB启动" vertex="1">
+          <mxGeometry height="40" width="90" x="650" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-46" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-45">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="795" />
+              <mxPoint x="630" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Snxa9bD47oOBx4wNCC72-47" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="两个分区都失败？" vertex="1">
+          <mxGeometry height="55" width="100" x="185" y="767" as="geometry" />
+        </mxCell>
+        <mxCell id="kbyZZD2k67tRUDCe1sfv-2" edge="1" parent="1" source="Snxa9bD47oOBx4wNCC72-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="kbyZZD2k67tRUDCe1sfv-1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="385" y="362" as="sourcePoint" />
+            <mxPoint x="280" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kbyZZD2k67tRUDCe1sfv-3" connectable="0" parent="kbyZZD2k67tRUDCe1sfv-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.5934" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kbyZZD2k67tRUDCe1sfv-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="发命令切高速 HS-G1" vertex="1">
+          <mxGeometry height="40" width="90" x="340" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="kbyZZD2k67tRUDCe1sfv-6" edge="1" parent="1" source="kbyZZD2k67tRUDCe1sfv-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="560" />
+              <mxPoint x="280" y="560" />
+            </Array>
+            <mxPoint x="280" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kbyZZD2k67tRUDCe1sfv-8" edge="1" parent="1" source="kbyZZD2k67tRUDCe1sfv-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Snxa9bD47oOBx4wNCC72-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kbyZZD2k67tRUDCe1sfv-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="切速率成功？" vertex="1">
+          <mxGeometry height="55" width="100" x="335" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj_6jyX3p3bSbpmFPhCt-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="启动成功" vertex="1">
+          <mxGeometry height="40" width="90" x="335" y="617.5" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -188,137 +413,6 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;启动模式&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;000： [emmc] → [usb] → [uart]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- 启动模式 001： [usb] → [emmc] → [spi-nand] → [spi-nor]&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs低速切高速]&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs&lt;/span&gt;低&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;速]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs高速]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- 启动模式 010： [spi-nor] → [usb] → [uart]&lt;/div&gt;&lt;div&gt;- 启动模式 011： [spi-nand] → [usb] → [uart]&lt;/div&gt;&lt;div&gt;- 启动模式 100： [uart] → [spi-nor] → [spi-nand] → [emmc]&lt;/div&gt;&lt;div&gt;- 启动模式 101： [ufs低速切高速] &lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs高速]&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[ufs&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;低&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;速]&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[usb]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- 启动模式 110：&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[ufs高速]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs&lt;/span&gt;低&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;速切高速]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ [ufs&lt;/span&gt;低&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;速] &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[usb]&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="110" width="556" x="460" y="670" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="新增Efuse：&lt;div&gt;1. 低速是否需要切高速.(默认切高速， 设置后不切)&lt;/div&gt;&lt;div&gt;2. 是否控制efuse pin （默认不控制，设置后控制）&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="290" x="726" y="790" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-3" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="复位" vertex="1">
-          <mxGeometry height="40" width="90" x="536" y="950" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-5" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="配置低速建链" vertex="1">
-          <mxGeometry height="40" width="90" x="536" y="1080" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-7" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-6">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="581" y="1074" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN" vertex="1">
-          <mxGeometry height="40" width="90" x="536" y="1014" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-9" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-21">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="发命令切高速 HS-G1" vertex="1">
-          <mxGeometry height="40" width="90" x="536" y="1230" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-11" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="6CTl7y4M6yy6MkA52T4Q-10">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-12" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
-          <mxGeometry height="55" width="100" x="531" y="1147" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;text-align: left;&quot;&gt;启动模式 101&lt;/span&gt;" vertex="1">
-          <mxGeometry height="40" width="90" x="536" y="870" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-14" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-17">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="复位" vertex="1">
-          <mxGeometry height="40" width="90" x="686" y="950" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-16" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-19">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN" vertex="1">
-          <mxGeometry height="40" width="90" x="686" y="1014" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-18" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-29">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="配置高速建链" vertex="1">
-          <mxGeometry height="40" width="90" x="686" y="1080" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-20" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-23">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-21" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
-          <mxGeometry height="55" width="100" x="531" y="1300" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-22" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-25">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="读数据" vertex="1">
-          <mxGeometry height="40" width="90" x="536" y="1380" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-24" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-27">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-25" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="数据校验OK ？" vertex="1">
-          <mxGeometry height="55" width="100" x="531" y="1450" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-26" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="581" y="1610" />
-              <mxPoint x="486" y="1610" />
-              <mxPoint x="486" y="970" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="切分区" vertex="1">
-          <mxGeometry height="40" width="90" x="536" y="1540" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-28" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-31">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-29" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
-          <mxGeometry height="55" width="100" x="681" y="1147" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-30" edge="1" parent="1" source="6CTl7y4M6yy6MkA52T4Q-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6CTl7y4M6yy6MkA52T4Q-32">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="读数据" vertex="1">
-          <mxGeometry height="40" width="90" x="686" y="1230" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-32" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="数据校验OK ？" vertex="1">
-          <mxGeometry height="55" width="100" x="681" y="1300" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="成功" vertex="1">
-          <mxGeometry height="40" width="90" x="686" y="1640" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="切分区" vertex="1">
-          <mxGeometry height="40" width="90" x="686" y="1390" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="复位" vertex="1">
-          <mxGeometry height="40" width="90" x="836" y="950" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="配置LSS PIN" vertex="1">
-          <mxGeometry height="40" width="90" x="836" y="1014" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="配置低速建链" vertex="1">
-          <mxGeometry height="40" width="90" x="836" y="1080" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-38" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
-          <mxGeometry height="55" width="100" x="831" y="1147" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="读数据" vertex="1">
-          <mxGeometry height="40" width="90" x="836" y="1230" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-40" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="数据校验OK ？" vertex="1">
-          <mxGeometry height="55" width="100" x="826" y="1300" as="geometry" />
-        </mxCell>
-        <mxCell id="6CTl7y4M6yy6MkA52T4Q-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="切分区" vertex="1">
-          <mxGeometry height="40" width="90" x="836" y="1390" as="geometry" />
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

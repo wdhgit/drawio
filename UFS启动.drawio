@@ -409,10 +409,238 @@
     </mxGraphModel>
   </diagram>
   <diagram id="lCvtZ__jX87erlVo9mpF" name="第 2 页">
-    <mxGraphModel dx="1894" dy="981" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1082" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=14;" value="&lt;div&gt;&lt;div&gt;- 启动模式 101： [ufs低速启动] &lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[usb]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- 启动模式 110： &lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[ufs高速启动]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;→ &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[usb]&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;异常情况汇总：" vertex="1">
+          <mxGeometry height="50" width="360" x="40" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-2" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="240" width="730" x="40" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-6" parent="WnOlcH9fiUK7AfTd9S8V-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" as="geometry" />
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-7" parent="-yYV-AWoShLVFezPO-Gk-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="case" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-8" parent="-yYV-AWoShLVFezPO-Gk-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="启动情况" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-9" parent="-yYV-AWoShLVFezPO-Gk-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="建链结果" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-2" parent="WnOlcH9fiUK7AfTd9S8V-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-3" parent="-yYV-AWoShLVFezPO-Gk-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="1" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-4" parent="-yYV-AWoShLVFezPO-Gk-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom 配置低速启动，但是颗粒硬件设置高速启动，高速成功" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-5" parent="-yYV-AWoShLVFezPO-Gk-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom先低速建链失败 --&amp;gt; 高速建链成功" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-10" parent="WnOlcH9fiUK7AfTd9S8V-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-11" parent="-yYV-AWoShLVFezPO-Gk-10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="2" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-12" parent="-yYV-AWoShLVFezPO-Gk-10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom 配置高速启动，但是颗粒硬件设置底速启动，低速切高速成功" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-yYV-AWoShLVFezPO-Gk-13" parent="-yYV-AWoShLVFezPO-Gk-10" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom先高速建链失败 --&amp;gt; 低速建链成功并切高速" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-3" parent="WnOlcH9fiUK7AfTd9S8V-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-4" parent="WnOlcH9fiUK7AfTd9S8V-3" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="3" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-5" parent="WnOlcH9fiUK7AfTd9S8V-3" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom 配置低速启动，颗粒也是低速，切速率成功" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-6" parent="WnOlcH9fiUK7AfTd9S8V-3" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom低速建链切高速" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-7" parent="WnOlcH9fiUK7AfTd9S8V-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-8" parent="WnOlcH9fiUK7AfTd9S8V-7" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="4" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-9" parent="WnOlcH9fiUK7AfTd9S8V-7" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom 配置高速启动，颗粒也是高速，高速成功" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-10" parent="WnOlcH9fiUK7AfTd9S8V-7" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom高速建链" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-11" parent="WnOlcH9fiUK7AfTd9S8V-2" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-12" parent="WnOlcH9fiUK7AfTd9S8V-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="5" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-13" parent="WnOlcH9fiUK7AfTd9S8V-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom 配置低速启动，颗粒也是低速，切速率失败，不切速率成功" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WnOlcH9fiUK7AfTd9S8V-14" parent="WnOlcH9fiUK7AfTd9S8V-11" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom低速建链切高速失败 --&amp;gt; bootrom 高速建链失败 ---&amp;gt; bootrom 低速建链成功(不切高速)" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-39" parent="1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" x="40" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-63" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="240" width="730" x="40" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-64" parent="PYW4Q93ZiJ2KnNfdN5cH-63" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" as="geometry" />
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-65" parent="PYW4Q93ZiJ2KnNfdN5cH-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="6" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-66" parent="PYW4Q93ZiJ2KnNfdN5cH-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom 配置高速启动，颗粒是低速，低速切高速失败" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-67" parent="PYW4Q93ZiJ2KnNfdN5cH-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom高速建链失败 --&amp;gt; bootrom 低速建链切高速失败 ---&amp;gt; bootrom 低速建链成功(不切高速)" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-68" parent="PYW4Q93ZiJ2KnNfdN5cH-63" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-69" parent="PYW4Q93ZiJ2KnNfdN5cH-68" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="7" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-70" parent="PYW4Q93ZiJ2KnNfdN5cH-68" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom配置高速启动，颗粒也是高速，但是高速建链失败" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-71" parent="PYW4Q93ZiJ2KnNfdN5cH-68" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom高速建链失败 --&amp;gt; bootrom 低速建链切高速失败 ---&amp;gt; bootrom 低速建链失败 &lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;（需要改颗粒硬件PIN配置低速）&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-72" parent="PYW4Q93ZiJ2KnNfdN5cH-63" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-73" parent="PYW4Q93ZiJ2KnNfdN5cH-72" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="8" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-74" parent="PYW4Q93ZiJ2KnNfdN5cH-72" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom 配置低速启动，颗粒也是低速，低速建链失败" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-75" parent="PYW4Q93ZiJ2KnNfdN5cH-72" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="bootrom低速建链切高速失败 --&amp;gt; bootrom 高速建链失败 ---&amp;gt; bootrom 低速建链失败 --&amp;gt; &lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;USB 启动&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-76" parent="PYW4Q93ZiJ2KnNfdN5cH-63" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-77" parent="PYW4Q93ZiJ2KnNfdN5cH-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-78" parent="PYW4Q93ZiJ2KnNfdN5cH-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-79" parent="PYW4Q93ZiJ2KnNfdN5cH-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-80" parent="PYW4Q93ZiJ2KnNfdN5cH-63" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-81" parent="PYW4Q93ZiJ2KnNfdN5cH-80" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-82" parent="PYW4Q93ZiJ2KnNfdN5cH-80" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-83" parent="PYW4Q93ZiJ2KnNfdN5cH-80" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-84" parent="PYW4Q93ZiJ2KnNfdN5cH-63" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="730" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-85" parent="PYW4Q93ZiJ2KnNfdN5cH-84" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="32" as="geometry">
+            <mxRectangle height="40" width="32" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-86" parent="PYW4Q93ZiJ2KnNfdN5cH-84" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="288" x="32" as="geometry">
+            <mxRectangle height="40" width="288" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PYW4Q93ZiJ2KnNfdN5cH-87" parent="PYW4Q93ZiJ2KnNfdN5cH-84" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontSize=14;align=left;" value="" vertex="1">
+          <mxGeometry height="40" width="410" x="320" as="geometry">
+            <mxRectangle height="40" width="410" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

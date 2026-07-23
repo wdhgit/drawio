@@ -1,0 +1,193 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="第 1 页" id="FhAuJ61DrwCMc4Ao1SrH">
+    <mxGraphModel dx="1306" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;BOOTROM&amp;nbsp;&lt;/div&gt;&lt;div&gt;（根据头部信息决定是从spl0还是spl1启动, 如果spl有坏的，就从好的spl 启动）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="60" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;SPL 0&lt;/div&gt;&lt;div&gt;(默认DDR FW 永远不会变 )&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="60" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;DDR FW 0&lt;/div&gt;&lt;div&gt;（小于256KB，放到一个block）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="100" x="440" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;DDR FW 1&lt;br&gt;（小于256KB，放到一个block）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="90" x="540" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;DDR 参数&lt;br&gt;（不做坏块管理，如果读数据有问题，重新training，然后重新保存）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="130" x="630" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;SPL 1&lt;/div&gt;&lt;div&gt;(默认DDR FW 永远不会变 )&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="220" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;preboot.itb 0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="60" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;preboot.itb 1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="160" x="220" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=13;" value="spl OTA 同步升级方案：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. CRC校验 检查spl0 / spl1是否都是OK的，如果都是OK的，检查当前使用的是哪个spl (通过读nand header 可以知道)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. 如果spl0/spl1 都没问题，说明更新一个分区不会变砖，此时更新没有使用的分区的 spl。如果有spl 损坏，那就更新损坏的spl，更新的时候跳过坏块。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. 更新后修改&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nand header， 确保下次从新的spl启动。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="330" x="50" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="Wtbu22s13VtOahG4Z0uz-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=13;" value="preboot.itb OTA 同步升级方案：&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;spl 0和preboot.itb 0 做绑定，spl 1和preboot.itb 1 做绑定&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. CRC校验 检查&lt;span style=&quot;text-align: center;&quot;&gt;preboot.itb &lt;/span&gt;0 /&amp;nbsp;&lt;span style=&quot;text-align: center;&quot;&gt;preboot.itb 1&lt;/span&gt;是否都是OK的，如果都是OK的，检查当前使用的是哪个&lt;span style=&quot;text-align: center;&quot;&gt;preboot.itb&lt;/span&gt;（通过读nand header 可以知道）。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. 如果&lt;span style=&quot;text-align: center;&quot;&gt;preboot.itb &lt;/span&gt;0 / &lt;span style=&quot;text-align: center;&quot;&gt;preboot.itb 1&lt;/span&gt;&amp;nbsp;都没问题，说明更新一个分区不会变砖，此时spl 更新0，那么preboot.itb 就更新0。如果有损坏的 preboot.itb，那么就尝试先修复坏的preboot.itb （好的拷贝过去），然后跟随 spl更新。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="330" x="420" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="3_uJNqzzVW6hqWIXCMoC" name="第 2 页">
+    <mxGraphModel dx="1082" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t5naWSrniXMLddmbZoRZ-9" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t5naWSrniXMLddmbZoRZ-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5naWSrniXMLddmbZoRZ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BOOTROM" vertex="1">
+          <mxGeometry height="40" width="120" x="315" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="t5naWSrniXMLddmbZoRZ-7" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="t5naWSrniXMLddmbZoRZ-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5naWSrniXMLddmbZoRZ-2" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="header is part 0 ？" vertex="1">
+          <mxGeometry height="80" width="126" x="312" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="U3HCmGl1tsjHilU6wBV9-2" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U3HCmGl1tsjHilU6wBV9-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t5naWSrniXMLddmbZoRZ-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SPL 0" vertex="1">
+          <mxGeometry height="40" width="120" x="206" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="U3HCmGl1tsjHilU6wBV9-3" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U3HCmGl1tsjHilU6wBV9-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="386" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t5naWSrniXMLddmbZoRZ-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SPL 1" vertex="1">
+          <mxGeometry height="40" width="120" x="426" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="t5naWSrniXMLddmbZoRZ-8" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.537;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" target="t5naWSrniXMLddmbZoRZ-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-3" edge="1" parent="1" source="U3HCmGl1tsjHilU6wBV9-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U3HCmGl1tsjHilU6wBV9-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U3HCmGl1tsjHilU6wBV9-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SPL 根据 bootcode 修改 header，确保下次从好的spl启动" vertex="1">
+          <mxGeometry height="60" width="120" x="312" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-1" edge="1" parent="1" source="U3HCmGl1tsjHilU6wBV9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U3HCmGl1tsjHilU6wBV9-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-22" connectable="0" parent="qu5O2pGxznn21zN2id32-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Y" vertex="1">
+          <mxGeometry relative="1" x="-0.2994" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U3HCmGl1tsjHilU6wBV9-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="spl从 0 分区启动 ？" vertex="1">
+          <mxGeometry height="80" width="126" x="309" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-30" edge="1" parent="1" source="U3HCmGl1tsjHilU6wBV9-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qu5O2pGxznn21zN2id32-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U3HCmGl1tsjHilU6wBV9-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="preboot.itb 0&lt;div&gt;先读0，校验失败后切到1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="206" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-31" edge="1" parent="1" source="U3HCmGl1tsjHilU6wBV9-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="qu5O2pGxznn21zN2id32-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U3HCmGl1tsjHilU6wBV9-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="preboot.itb 1&lt;div&gt;先读1，校验失败后切到0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="432" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-2" edge="1" parent="1" source="U3HCmGl1tsjHilU6wBV9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U3HCmGl1tsjHilU6wBV9-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-23" connectable="0" parent="qu5O2pGxznn21zN2id32-2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.5566" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ddr fw 0" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ddr fw 1" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ddr param" vertex="1">
+          <mxGeometry height="60" width="60" x="120" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ddr fw 0" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ddr fw 1" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ddr param" vertex="1">
+          <mxGeometry height="60" width="60" x="580" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="DDR 0" vertex="1">
+          <mxGeometry height="30" width="60" x="120" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="DDR 1" vertex="1">
+          <mxGeometry height="30" width="60" x="580" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-20" edge="1" parent="1" source="qu5O2pGxznn21zN2id32-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qu5O2pGxznn21zN2id32-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="262" y="840.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-24" connectable="0" parent="qu5O2pGxznn21zN2id32-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Y" vertex="1">
+          <mxGeometry relative="1" x="-0.5246" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-21" edge="1" parent="1" source="qu5O2pGxznn21zN2id32-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qu5O2pGxznn21zN2id32-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="488" y="840.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-25" connectable="0" parent="qu5O2pGxznn21zN2id32-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.592" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="preboot 从0启动？" vertex="1">
+          <mxGeometry height="80" width="126" x="308" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="boot.itb 0&lt;div&gt;先读0，校验失败后切到1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="202" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="boot.itb 1&lt;div&gt;先读0，校验失败后切到1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="120" x="428" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-28" edge="1" parent="1" source="qu5O2pGxznn21zN2id32-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qu5O2pGxznn21zN2id32-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-33" connectable="0" parent="qu5O2pGxznn21zN2id32-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Y" vertex="1">
+          <mxGeometry relative="1" x="-0.7417" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-29" edge="1" parent="1" source="qu5O2pGxznn21zN2id32-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qu5O2pGxznn21zN2id32-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-32" connectable="0" parent="qu5O2pGxznn21zN2id32-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.4275" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-26" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Recovery flag enable?" vertex="1">
+          <mxGeometry height="80" width="126" x="308" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="qu5O2pGxznn21zN2id32-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RECOVERY boot.itb" vertex="1">
+          <mxGeometry height="50" width="120" x="620" y="910" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

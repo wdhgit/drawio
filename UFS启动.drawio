@@ -140,6 +140,11 @@
         <mxCell id="KlgkcFlpm4Ags5-VuJH5-8" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="NB0EyB8uGB_RDp4CUSld-42">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="QEKlzjzncTF9FpihQKVG-2" connectable="0" parent="KlgkcFlpm4Ags5-VuJH5-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="否" vertex="1">
+          <mxGeometry relative="1" x="-0.9449" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Vg5q-0XLda4XJRTYY7xd-7" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -152,6 +157,11 @@
         </mxCell>
         <mxCell id="Vg5q-0XLda4XJRTYY7xd-8" edge="1" parent="1" source="NB0EyB8uGB_RDp4CUSld-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Vg5q-0XLda4XJRTYY7xd-3">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QEKlzjzncTF9FpihQKVG-3" connectable="0" parent="Vg5q-0XLda4XJRTYY7xd-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="是" vertex="1">
+          <mxGeometry relative="1" x="-0.5664" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="NB0EyB8uGB_RDp4CUSld-31" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="建链成功？" vertex="1">
           <mxGeometry height="55" width="100" x="380" y="517" as="geometry" />
@@ -270,7 +280,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ql6nhWf0VNW54Wtxsakh" name="第 3 页">
-    <mxGraphModel dx="1082" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

@@ -373,7 +373,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="FkPjH5Jrh0ZiokI13S2b" name="第 4 页">
-    <mxGraphModel dx="1306" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="902" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -389,10 +389,10 @@
         <mxCell id="BGXKqTItHhKRfNKxeiZ4-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="header 2" vertex="1">
           <mxGeometry height="30" width="120" x="250" y="280" as="geometry" />
         </mxCell>
-        <mxCell id="BGXKqTItHhKRfNKxeiZ4-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="SPL 0&lt;div&gt;1MB&lt;/div&gt;" vertex="1">
+        <mxCell id="BGXKqTItHhKRfNKxeiZ4-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="SPL 0&lt;div&gt;768KB&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="120" x="250" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="BGXKqTItHhKRfNKxeiZ4-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="SPL 1&lt;div&gt;1MB&lt;/div&gt;" vertex="1">
+        <mxCell id="BGXKqTItHhKRfNKxeiZ4-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="SPL 1&lt;div&gt;768KB&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="120" x="250" y="430" as="geometry" />
         </mxCell>
         <mxCell id="BGXKqTItHhKRfNKxeiZ4-22" edge="1" parent="1" source="BGXKqTItHhKRfNKxeiZ4-1" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" target="BGXKqTItHhKRfNKxeiZ4-15" value="">

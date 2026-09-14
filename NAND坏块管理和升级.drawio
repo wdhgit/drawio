@@ -233,6 +233,12 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="165" width="550" x="180" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="158" width="550" x="180" y="560" as="geometry" />
+        </mxCell>
         <mxCell id="r7YmLHjoFk8sYZ39fk0b-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
           <mxGeometry height="223" width="550" x="180" y="139" as="geometry" />
         </mxCell>
@@ -374,12 +380,6 @@
         <mxCell id="r7YmLHjoFk8sYZ39fk0b-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="DDR FW更新" vertex="1">
           <mxGeometry height="30" width="60" x="110" y="441.25" as="geometry" />
         </mxCell>
-        <mxCell id="r7YmLHjoFk8sYZ39fk0b-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
-          <mxGeometry height="158" width="550" x="180" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="r7YmLHjoFk8sYZ39fk0b-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
-          <mxGeometry height="165" width="550" x="180" y="730" as="geometry" />
-        </mxCell>
         <mxCell id="r7YmLHjoFk8sYZ39fk0b-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SPL 更新" vertex="1">
           <mxGeometry height="30" width="60" x="110" y="235.5" as="geometry" />
         </mxCell>
@@ -392,7 +392,7 @@
         <mxCell id="fF6tVBWEKJ8yvaO7VuNt-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;fontStyle=1" value="进入主系统更新未使用分区和recovery" vertex="1">
           <mxGeometry height="30" width="359" x="190" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="fF6tVBWEKJ8yvaO7VuNt-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新 recovery boot" vertex="1">
+        <mxCell id="fF6tVBWEKJ8yvaO7VuNt-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="更新 recovery boot" vertex="1">
           <mxGeometry height="50" width="190" x="230" y="980" as="geometry" />
         </mxCell>
       </root>
@@ -562,7 +562,7 @@
         <mxCell id="CLs1i33gvbTCOi8FJdLM-52" parent="CLs1i33gvbTCOi8FJdLM-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;fontStyle=1" value="进入recovery更新旧分区和主系统" vertex="1">
           <mxGeometry height="30" width="288" x="190" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="CLs1i33gvbTCOi8FJdLM-53" parent="CLs1i33gvbTCOi8FJdLM-1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新 主系统" vertex="1">
+        <mxCell id="CLs1i33gvbTCOi8FJdLM-53" parent="CLs1i33gvbTCOi8FJdLM-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="更新 主系统" vertex="1">
           <mxGeometry height="50" width="190" x="230" y="980" as="geometry" />
         </mxCell>
       </root>

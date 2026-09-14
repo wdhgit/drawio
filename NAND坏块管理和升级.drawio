@@ -144,7 +144,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qu5O2pGxznn21zN2id32-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="preboot 从0启动？" vertex="1">
+        <mxCell id="qu5O2pGxznn21zN2id32-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="spl从 0 分区启动 ？" vertex="1">
           <mxGeometry height="80" width="126" x="302" y="914" as="geometry" />
         </mxCell>
         <mxCell id="qu5O2pGxznn21zN2id32-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="boot.itb 0&lt;div&gt;先读0，校验失败后切到1&lt;/div&gt;" vertex="1">

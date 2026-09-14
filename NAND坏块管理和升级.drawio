@@ -38,7 +38,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3_uJNqzzVW6hqWIXCMoC" name="第 2 页">
-    <mxGraphModel dx="1306" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1082" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,12 +46,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t5naWSrniXMLddmbZoRZ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="BOOTROM" vertex="1">
-          <mxGeometry height="40" width="120" x="305" y="120" as="geometry" />
+          <mxGeometry height="40" width="120" x="315" y="80" as="geometry" />
         </mxCell>
         <mxCell id="t5naWSrniXMLddmbZoRZ-7" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="t5naWSrniXMLddmbZoRZ-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="256" y="220" />
+              <mxPoint x="266" y="180" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -61,13 +61,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="t5naWSrniXMLddmbZoRZ-2" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="header is part 0 ？" vertex="1">
-          <mxGeometry height="80" width="126" x="302" y="180" as="geometry" />
+          <mxGeometry height="80" width="126" x="312" y="140" as="geometry" />
         </mxCell>
         <mxCell id="U3HCmGl1tsjHilU6wBV9-2" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U3HCmGl1tsjHilU6wBV9-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="t5naWSrniXMLddmbZoRZ-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="读并启动 SPL 0" vertex="1">
-          <mxGeometry height="40" width="120" x="196" y="275" as="geometry" />
+          <mxGeometry height="40" width="120" x="206" y="235" as="geometry" />
         </mxCell>
         <mxCell id="U3HCmGl1tsjHilU6wBV9-3" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U3HCmGl1tsjHilU6wBV9-1">
           <mxGeometry relative="1" as="geometry">
@@ -75,7 +75,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="t5naWSrniXMLddmbZoRZ-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="读并启动 SPL 1" vertex="1">
-          <mxGeometry height="40" width="120" x="416" y="275" as="geometry" />
+          <mxGeometry height="40" width="120" x="426" y="235" as="geometry" />
         </mxCell>
         <mxCell id="t5naWSrniXMLddmbZoRZ-8" edge="1" parent="1" source="t5naWSrniXMLddmbZoRZ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.537;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;" target="t5naWSrniXMLddmbZoRZ-4">
           <mxGeometry relative="1" as="geometry" />
@@ -90,11 +90,20 @@
             <mxPoint x="365.20000000000005" y="456" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U3HCmGl1tsjHilU6wBV9-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SPL 根据 bootcode 修改 header，确保下次从好的spl启动" vertex="1">
+        <mxCell id="U3HCmGl1tsjHilU6wBV9-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="SPL 根据 bootcode 修改 header，确保下次从好的spl启动" vertex="1">
           <mxGeometry height="60" width="200" x="265" y="376" as="geometry" />
         </mxCell>
         <mxCell id="4R-Z1zKAXvN_8fqJJjKR-6" edge="1" parent="1" source="U3HCmGl1tsjHilU6wBV9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="4R-Z1zKAXvN_8fqJJjKR-3">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="486" y="500.43" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2vSxUscegyNMa6XCkd6-4" connectable="0" parent="4R-Z1zKAXvN_8fqJJjKR-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
+          <mxGeometry relative="1" x="-0.6145" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="U3HCmGl1tsjHilU6wBV9-4" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="spl从 0 分区启动 ？" vertex="1">
           <mxGeometry height="80" width="126" x="302" y="460.38" as="geometry" />
@@ -103,13 +112,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="U3HCmGl1tsjHilU6wBV9-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="preboot.itb 0&lt;div&gt;先读0，校验失败后切到1&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="200" y="696" as="geometry" />
+          <mxGeometry height="60" width="120" x="200" y="670" as="geometry" />
         </mxCell>
         <mxCell id="qu5O2pGxznn21zN2id32-31" edge="1" parent="1" source="U3HCmGl1tsjHilU6wBV9-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="qu5O2pGxznn21zN2id32-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="U3HCmGl1tsjHilU6wBV9-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="preboot.itb 1&lt;div&gt;先读1，校验失败后切到0&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="426" y="696" as="geometry" />
+          <mxGeometry height="60" width="120" x="426" y="670" as="geometry" />
         </mxCell>
         <mxCell id="qu5O2pGxznn21zN2id32-20" edge="1" parent="1" source="qu5O2pGxznn21zN2id32-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qu5O2pGxznn21zN2id32-18">
           <mxGeometry relative="1" as="geometry">
@@ -160,35 +169,35 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qu5O2pGxznn21zN2id32-26" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Recovery flag enable?" vertex="1">
+        <mxCell id="qu5O2pGxznn21zN2id32-26" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Recovery flag enable?" vertex="1">
           <mxGeometry height="80" width="126" x="302" y="804" as="geometry" />
         </mxCell>
-        <mxCell id="qu5O2pGxznn21zN2id32-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RECOVERY boot.itb" vertex="1">
+        <mxCell id="qu5O2pGxznn21zN2id32-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="RECOVERY boot.itb" vertex="1">
           <mxGeometry height="50" width="120" x="614" y="1024" as="geometry" />
         </mxCell>
         <mxCell id="IVpJBeEMJFBte35xN1sF-2" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" value="bootrom" vertex="1">
-          <mxGeometry height="190" width="30" x="84" y="151" as="geometry" />
+          <mxGeometry height="190" width="30" x="94" y="111" as="geometry" />
         </mxCell>
         <mxCell id="IVpJBeEMJFBte35xN1sF-4" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" value="spl" vertex="1">
-          <mxGeometry height="380" width="30" x="74" y="376" as="geometry" />
+          <mxGeometry height="380" width="30" x="94" y="376" as="geometry" />
         </mxCell>
         <mxCell id="IVpJBeEMJFBte35xN1sF-5" parent="1" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" value="uboot" vertex="1">
-          <mxGeometry height="290" width="30" x="74" y="796" as="geometry" />
+          <mxGeometry height="290" width="30" x="94" y="796" as="geometry" />
         </mxCell>
         <mxCell id="4-uMBQyxauKExTAqjfjc-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="DDR FW" vertex="1">
-          <mxGeometry height="40" width="88" x="639.5" y="550.38" as="geometry" />
+          <mxGeometry height="40" width="88" x="666.5" y="550.38" as="geometry" />
         </mxCell>
         <mxCell id="4-uMBQyxauKExTAqjfjc-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="预留，防止有坏块" vertex="1">
-          <mxGeometry height="40" width="88" x="639.5" y="590.38" as="geometry" />
+          <mxGeometry height="40" width="88" x="666.5" y="590.38" as="geometry" />
         </mxCell>
         <mxCell id="4-uMBQyxauKExTAqjfjc-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="512KB 单个 DDR 分区 layout" vertex="1">
-          <mxGeometry height="30" width="112" x="637.5" y="510.38" as="geometry" />
+          <mxGeometry height="30" width="112" x="664.5" y="510.38" as="geometry" />
         </mxCell>
         <mxCell id="4-uMBQyxauKExTAqjfjc-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" value="" vertex="1">
-          <mxGeometry height="144.37" width="141" x="613" y="500.38" as="geometry" />
+          <mxGeometry height="144.37" width="141" x="640" y="500.38" as="geometry" />
         </mxCell>
         <mxCell id="4-uMBQyxauKExTAqjfjc-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" value="读写固件的行为，都要有跳过坏块的机制，OTA写的时候跳过，读的时候也要跳过" vertex="1">
-          <mxGeometry height="70" width="160" x="594" y="706" as="geometry" />
+          <mxGeometry height="70" width="160" x="614" y="706" as="geometry" />
         </mxCell>
         <mxCell id="4R-Z1zKAXvN_8fqJJjKR-7" edge="1" parent="1" source="4R-Z1zKAXvN_8fqJJjKR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="U3HCmGl1tsjHilU6wBV9-5">
           <mxGeometry relative="1" as="geometry" />
@@ -205,140 +214,125 @@
         <mxCell id="4R-Z1zKAXvN_8fqJJjKR-5" edge="1" parent="1" source="U3HCmGl1tsjHilU6wBV9-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.502;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="4R-Z1zKAXvN_8fqJJjKR-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="h2vSxUscegyNMa6XCkd6-3" connectable="0" parent="4R-Z1zKAXvN_8fqJJjKR-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Y" vertex="1">
+          <mxGeometry relative="1" x="-0.5311" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h2vSxUscegyNMa6XCkd6-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;rounded=0;" value="如果分区有损坏，可以切到另一个分区" vertex="1">
+          <mxGeometry height="60" width="80" x="580" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="h2vSxUscegyNMa6XCkd6-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;rounded=0;" value="如果分区有损坏，可以切到另一个分区" vertex="1">
+          <mxGeometry height="60" width="80" x="520" y="470.38" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="OJZyAYIsB5TxttxnIPP4" name="第 3 页">
-    <mxGraphModel dx="902" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="758" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-8" edge="1" parent="1" source="YcooHPwls0-yQMvgdiac-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="b6EW_TDPfwkwsjI4CKbt-2">
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="223" width="550" x="180" y="139" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="165" width="550" x="180" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-6" edge="1" parent="1" source="YcooHPwls0-yQMvgdiac-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="b6EW_TDPfwkwsjI4CKbt-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YcooHPwls0-yQMvgdiac-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="需要全部更新" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="50" as="geometry" />
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-14" edge="1" parent="1" source="b6EW_TDPfwkwsjI4CKbt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="b6EW_TDPfwkwsjI4CKbt-13">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="先读两个SPL 校验是否损坏" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-18" edge="1" parent="1" source="b6EW_TDPfwkwsjI4CKbt-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="325" y="430" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="校验，如果SPL0损坏就更新SPL0，如果SPL1损坏就更新SPL1" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="298" as="geometry" />
+        <mxCell id="YcooHPwls0-yQMvgdiac-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="全部更新" vertex="1">
+          <mxGeometry height="50" width="190" x="230" y="80" as="geometry" />
         </mxCell>
         <mxCell id="b6EW_TDPfwkwsjI4CKbt-17" edge="1" parent="1" source="b6EW_TDPfwkwsjI4CKbt-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="b6EW_TDPfwkwsjI4CKbt-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="b6EW_TDPfwkwsjI4CKbt-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="读NAND HEADER 知道当前用的是哪个SPL" vertex="1">
-          <mxGeometry height="50" width="220" x="480" y="298" as="geometry" />
+          <mxGeometry height="50" width="190" x="230" y="155" as="geometry" />
         </mxCell>
-        <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-29" edge="1" parent="1" source="b6EW_TDPfwkwsjI4CKbt-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="324.9999999999998" y="430" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-1" edge="1" parent="1" source="b6EW_TDPfwkwsjI4CKbt-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="juodKUPCwEAexYUlofGC-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="b6EW_TDPfwkwsjI4CKbt-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="如果当前用的是SPL 0就更新SPL 1，如果用的是SPL 1 就更新SPL 0" vertex="1">
-          <mxGeometry height="50" width="220" x="480" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-15" edge="1" parent="1" source="b6EW_TDPfwkwsjI4CKbt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="b6EW_TDPfwkwsjI4CKbt-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-20" connectable="0" parent="b6EW_TDPfwkwsjI4CKbt-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="N" vertex="1">
-          <mxGeometry relative="1" x="-0.2132" y="-1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-16" edge="1" parent="1" source="b6EW_TDPfwkwsjI4CKbt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="b6EW_TDPfwkwsjI4CKbt-11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-21" connectable="0" parent="b6EW_TDPfwkwsjI4CKbt-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Y" vertex="1">
-          <mxGeometry relative="1" x="-0.611" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="b6EW_TDPfwkwsjI4CKbt-13" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="两个SPL 都 OK" vertex="1">
-          <mxGeometry height="60" width="190" x="230" y="200" as="geometry" />
+          <mxGeometry height="50" width="190" x="230" y="225.5" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-4" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CRC 校验preboot.itb，如果有损坏的preboot.itb 就先修复损坏的preboot.itb （把旧的好的拷贝过去）" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="641" as="geometry" />
+        <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="校验preboot.itb，如果有损坏的preboot.itb 就先修复损坏的preboot.itb （把旧的好的拷贝过去）" vertex="1">
+          <mxGeometry height="50" width="190" x="230" y="586" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-9" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="如果之前是更新的SPL 0就更新preboot 0，如果更新的是SPL 1 就更新preboot 1" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="721" as="geometry" />
+          <mxGeometry height="50" width="190" x="230" y="661" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-6" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CRC 校验boot.itb，如果有损坏的boot.itb 就先修复损坏的boot.itb" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="801" as="geometry" />
+          <mxGeometry height="50" width="190" x="230" y="741" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-23" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="如果之前是更新的SPL 0就更新boot 0，如果更新的是SPL 1 就更新boot 1" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="881" as="geometry" />
+          <mxGeometry height="50" width="190" x="230" y="821" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-13" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="先修复坏的，分区，即使断电，肯定还好有一个是好的，因为拷贝的是旧的，不存在新旧兼容问题" vertex="1">
-          <mxGeometry height="49" width="240" x="470" y="661" as="geometry" />
+          <mxGeometry height="49" width="240" x="474" y="570" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-14" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-1" style="edgeStyle=entityRelationEdgeStyle;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-13" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="490" y="735" as="sourcePoint" />
+            <mxPoint x="490" y="675" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-17" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-16" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-16" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="断电失败有还有备份，2个备份" vertex="1">
-          <mxGeometry height="45" width="230" x="480" y="741" as="geometry" />
+          <mxGeometry height="45" width="230" x="480" y="640" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-19" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-18" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-18" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="先修复坏的，分区，即使断电，肯定还好有一个是好的，因为拷贝的是旧的，不存在新旧兼容问题" vertex="1">
-          <mxGeometry height="49" width="230" x="480" y="821" as="geometry" />
+          <mxGeometry height="49" width="230" x="480" y="761" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-21" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-20" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-20" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="断电失败有还有备份，2个备份" vertex="1">
-          <mxGeometry height="45" width="230" x="480" y="901" as="geometry" />
+          <mxGeometry height="45" width="230" x="480" y="841" as="geometry" />
         </mxCell>
-        <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-32" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-31">
+        <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-32" edge="1" parent="1" source="fF6tVBWEKJ8yvaO7VuNt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fF6tVBWEKJ8yvaO7VuNt-3" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="fF6tVBWEKJ8yvaO7VuNt-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="都更新成功后再更新 NAND HEADER" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="981" as="geometry" />
+          <mxGeometry height="50" width="190" x="230" y="910" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-27" edge="1" parent="1" source="mJ5Ni7oN2aX-ZJO4obUC-26" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="mJ5Ni7oN2aX-ZJO4obUC-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-26" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="断电失败有还有备份，4个备份" vertex="1">
-          <mxGeometry height="50" width="230" x="480" y="981" as="geometry" />
+          <mxGeometry height="50" width="230" x="480" y="921" as="geometry" />
         </mxCell>
         <mxCell id="mJ5Ni7oN2aX-ZJO4obUC-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="重启后从新的分区启动" vertex="1">
-          <mxGeometry height="60" width="120" x="265" y="1071" as="geometry" />
+          <mxGeometry height="60" width="120" x="265" y="1060" as="geometry" />
         </mxCell>
         <mxCell id="2jzlP9-UJVvFjTwuszAZ-7" edge="1" parent="1" source="2jzlP9-UJVvFjTwuszAZ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2jzlP9-UJVvFjTwuszAZ-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2jzlP9-UJVvFjTwuszAZ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="校验ddr fw，如果有损坏的ddr fw&amp;nbsp;就先修复损坏的ddr fw&amp;nbsp;（把旧的好的拷贝过去）" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="500" as="geometry" />
+          <mxGeometry height="50" width="190" x="230" y="400" as="geometry" />
         </mxCell>
         <mxCell id="2jzlP9-UJVvFjTwuszAZ-3" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=left;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="&lt;span style=&quot;text-align: center;&quot;&gt;先修复坏的，分区，即使断电，肯定还好有一个是好的，因为拷贝的是旧的，不存在新旧兼容问题&lt;/span&gt;" vertex="1">
-          <mxGeometry height="45" width="232" x="478" y="502.5" as="geometry" />
+          <mxGeometry height="45" width="232" x="472" y="380" as="geometry" />
         </mxCell>
         <mxCell id="2jzlP9-UJVvFjTwuszAZ-5" edge="1" parent="1" source="2jzlP9-UJVvFjTwuszAZ-3" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="2jzlP9-UJVvFjTwuszAZ-1">
           <mxGeometry relative="1" as="geometry" />
@@ -347,27 +341,59 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="2jzlP9-UJVvFjTwuszAZ-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="如果之前是更新的SPL 0就更新ddr fw 0，如果更新的是SPL 1 就更新ddr fw 1" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="570" as="geometry" />
+          <mxGeometry height="50" width="190" x="230" y="470" as="geometry" />
         </mxCell>
         <mxCell id="2jzlP9-UJVvFjTwuszAZ-10" edge="1" parent="1" source="2jzlP9-UJVvFjTwuszAZ-9" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="2jzlP9-UJVvFjTwuszAZ-6">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="430" y="597.5" as="targetPoint" />
+            <mxPoint x="430" y="497.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="2jzlP9-UJVvFjTwuszAZ-9" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="断电失败有还有备份，2个备份" vertex="1">
-          <mxGeometry height="45" width="230" x="480" y="575" as="geometry" />
+          <mxGeometry height="45" width="230" x="474" y="450" as="geometry" />
         </mxCell>
         <mxCell id="juodKUPCwEAexYUlofGC-2" edge="1" parent="1" source="juodKUPCwEAexYUlofGC-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="2jzlP9-UJVvFjTwuszAZ-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="juodKUPCwEAexYUlofGC-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新 header crc，但是不更新 main part" vertex="1">
-          <mxGeometry height="50" width="190" x="230" y="430" as="geometry" />
+        <mxCell id="juodKUPCwEAexYUlofGC-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新 header crc，但是不更新 main part&lt;br&gt;（4个header都要更新）" vertex="1">
+          <mxGeometry height="50" width="190" x="230" y="302" as="geometry" />
         </mxCell>
         <mxCell id="juodKUPCwEAexYUlofGC-5" edge="1" parent="1" source="juodKUPCwEAexYUlofGC-4" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="juodKUPCwEAexYUlofGC-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="juodKUPCwEAexYUlofGC-4" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="断电失败有还有备份，4个备份" vertex="1">
-          <mxGeometry height="50" width="230" x="479" y="430" as="geometry" />
+          <mxGeometry height="50" width="230" x="478" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-2" edge="1" parent="1" source="r7YmLHjoFk8sYZ39fk0b-3" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="b6EW_TDPfwkwsjI4CKbt-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="263" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-3" parent="1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="断电失败有还有备份，好的spl没有被破坏" vertex="1">
+          <mxGeometry height="30" width="230" x="478" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="DDR FW更新" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="441.25" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="158" width="550" x="180" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="165" width="550" x="180" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="SPL 更新" vertex="1">
+          <mxGeometry height="30" width="60" x="110" y="235.5" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="preboot.itb 更新" vertex="1">
+          <mxGeometry height="30" width="60" x="100" y="631" as="geometry" />
+        </mxCell>
+        <mxCell id="r7YmLHjoFk8sYZ39fk0b-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="boot.itb 更新" vertex="1">
+          <mxGeometry height="30" width="60" x="100" y="797.5" as="geometry" />
+        </mxCell>
+        <mxCell id="fF6tVBWEKJ8yvaO7VuNt-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;fontStyle=1" value="进入主系统更新未使用分区和recovery" vertex="1">
+          <mxGeometry height="30" width="359" x="190" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fF6tVBWEKJ8yvaO7VuNt-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="更新 recovery boot" vertex="1">
+          <mxGeometry height="50" width="190" x="230" y="980" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

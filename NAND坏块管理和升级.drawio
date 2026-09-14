@@ -572,7 +572,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="CLs1i33gvbTCOi8FJdLM-43" parent="CLs1i33gvbTCOi8FJdLM-1" style="whiteSpace=wrap;html=1;rounded=1;arcSize=50;align=center;verticalAlign=middle;strokeWidth=1;autosize=1;spacing=4;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1,&quot;sourcePerimeterSpacing&quot;:0,&quot;targetPerimeterSpacing&quot;:0};" value="断电失败有还有备份，4个备份" vertex="1">
-          <mxGeometry height="50" width="230" x="478" y="290" as="geometry" />
+          <mxGeometry height="50" width="230" x="474" y="275.5" as="geometry" />
         </mxCell>
         <mxCell id="CLs1i33gvbTCOi8FJdLM-44" edge="1" parent="CLs1i33gvbTCOi8FJdLM-1" source="CLs1i33gvbTCOi8FJdLM-45" style="edgeStyle=entityRelationEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;endArrow=none;segment=10;curved=1;sourcePerimeterSpacing=0;targetPerimeterSpacing=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="CLs1i33gvbTCOi8FJdLM-9">
           <mxGeometry relative="1" as="geometry">
@@ -686,6 +686,15 @@
         </mxCell>
         <mxCell id="NHqHkl7YHRH3LC8_xlLU-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;fontStyle=1" value="分区表部分信息" vertex="1">
           <mxGeometry height="30" width="288" x="256" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3LHuAipIKFNNltbevlWa-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="预留了一个块做坏块管理" vertex="1">
+          <mxGeometry height="30" width="140" x="470" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="3LHuAipIKFNNltbevlWa-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="预留了一个块做坏块管理" vertex="1">
+          <mxGeometry height="30" width="140" x="470" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="3LHuAipIKFNNltbevlWa-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="预留了一个块做坏块管理" vertex="1">
+          <mxGeometry height="30" width="140" x="470" y="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
